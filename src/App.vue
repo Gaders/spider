@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+    margin: 0
+}
+body {
+    font-family: 'xingyan';
+}
+@font-face {
+    font-family: 'xingyan';
+    src: url('./assets/font/xingyan.eot');
+    src: url('./assets/font/xingyan.eot?#iefix') format('embedded-opentype'),
+        url('./assets/font/xingyan.woff') format('woff'),
+        url('./assets/font/xingyan.ttf') format('truetype'),
+        url('./assets/font/xingyan.svg#svgFontName') format('svg');
+   
+}
+@font-face {
+    font-family: 'pingfang';
+    src: url('./assets/font/pingfang.eot');
+    src: url('./assets/font/pingfang.eot?#iefix') format('embedded-opentype'),
+        url('./assets/font/pingfang.woff') format('woff'),
+        url('./assets/font/pingfang.ttf') format('truetype'),
+        url('./assets/font/pingfang.svg#svgFontName') format('svg');
 }
 </style>
